@@ -4,22 +4,22 @@ class LinearSearch
 {
   public static void main(String args[])
   {
-    int c, n, search, array[];
+    int c, size, search, array[];
  
     Scanner in = new Scanner(System.in);
     System.out.println("Enter number of elements");
-    n = in.nextInt(); 
-    array = new int[n];
+    size = in.nextInt(); 
+    array = new int[size];
  
-    System.out.println("Enter " + n + " integers");
+    System.out.println("Enter " + size + " integers");
  
-    for (c = 0; c < n; c++)
+    for (c = 0; c < size; c++)
       array[c] = in.nextInt();
  
     System.out.println("Enter value to find");
     search = in.nextInt();
  
-    for (c = 0; c < n; c++)
+    for (c = 0; c < size; c++)
     {
       if (array[c] == search)     
       {
@@ -27,7 +27,7 @@ class LinearSearch
           break;
       }
    }
-   if (c == n)  
+   if (c == size)  
       System.out.println(search + " isn't present in array.");
   }
 }
