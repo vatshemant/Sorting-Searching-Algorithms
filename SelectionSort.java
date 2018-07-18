@@ -1,5 +1,5 @@
 
-class Selection
+class SelectionSort
 {
     void sort(int arr[])
     {
@@ -27,7 +27,7 @@ class Selection
     }
     public static void main(String args[])
     {
-        Selection ob = new Selection();
+        SelectionSort ob = new SelectionSort();
         int arr[] = {64,25,12,22,11};
         ob.sort(arr);
         System.out.println("Sorted array");
